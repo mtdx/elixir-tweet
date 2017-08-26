@@ -14,7 +14,7 @@ defmodule ElixirTweet.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :quantum],
+    [applications: [:logger, :quantum, :extwitter],
      mod: {ElixirTweet, []}]
   end
 
@@ -29,6 +29,8 @@ defmodule ElixirTweet.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:credo, "~> 0.4.11"},
-    {:quantum, "~> 1.8"}]
+    {:quantum, "~> 1.8"},
+    {:oauth, github: "tim/erlang-oauth"},
+    {:extwitter, "~> 0.7.2"}]
   end
 end
