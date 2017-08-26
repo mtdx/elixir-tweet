@@ -4,19 +4,19 @@
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add `elixir-tweet` to your list of dependencies in `mix.exs`:
+  1. Add `elixir_tweet` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:elixir-tweet, "~> 0.1.0"}]
+      [{:elixir_tweet, "~> 0.1.0"}]
     end
     ```
 
-  2. Ensure `elixir-tweet` is started before your application:
+  2. Ensure `elixir_tweet` is started before your application:
 
     ```elixir
     def application do
-      [applications: [:elixir-tweet]]
+      [applications: [:elixir_tweet]]
     end
     ```
 

@@ -2,7 +2,7 @@ defmodule ElixirTweet.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :elixir-tweet,
+    [app: :elixir_tweet,
      version: "0.1.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
@@ -14,7 +14,7 @@ defmodule ElixirTweet.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger],
+    [applications: [:logger, :quantum],
      mod: {ElixirTweet, []}]
   end
 
@@ -28,6 +28,7 @@ defmodule ElixirTweet.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:credo, "~> 0.4.11"}]
+    [{:credo, "~> 0.4.11"},
+    {:quantum, "~> 1.8"}]
   end
 end
