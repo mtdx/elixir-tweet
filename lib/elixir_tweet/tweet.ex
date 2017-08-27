@@ -6,7 +6,7 @@ defmodule ElixirTweet.Tweet do
             access_token: System.get_env("ELIXIR_TWEET_TWITTER_ACCESS_TOKEN"),
             access_token_secret: System.get_env("ELIXIR_TWEET_TWITTER_ACCESS_SECRET")])
 
-        extwitter.update(text) 
+        ExTwitter.update(text)
     end
 
     def send_random(path) do
