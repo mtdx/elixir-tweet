@@ -1,4 +1,15 @@
 defmodule ElixirTweet.FileReader do
+    @doc """
+    This function will take the path to a file and find a string that can be tweeted out.
+
+    It will trim all the strings, and then eliminate any strings that are larger than 140 characters.
+
+    iex> ElixirTweet.FileReader.get_strings_to_tweet("priv/test/doc.txt")
+    "ABC"
+
+    iex> ElixirTweet.FileReader.get_strings_to_tweet("priv/test/too_long.txt")
+    "short line"
+    """
     def get_strings_to_tweet(filename) do
         File.read!(filename)
         |> pick_string

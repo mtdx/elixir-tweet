@@ -3,6 +3,8 @@ defmodule FileReaderTest do
     import ElixirTweet.FileReader
     import Mock
 
+    doctest ElixirTweet.FileReader
+
     test "Passing a file should return a string" do
         str = get_strings_to_tweet(Path.join("#{:code.priv_dir(:elixir_tweet)}", "sample.txt"))
 
