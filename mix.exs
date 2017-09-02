@@ -31,6 +31,8 @@ defmodule ElixirTweet.Mixfile do
     [{:credo, "~> 0.4.11"},
     {:quantum, "~> 1.8"},
     {:oauth, github: "tim/erlang-oauth"},
-    {:extwitter, "~> 0.7.2"}]
+    {:extwitter, "~> 0.7.2"},
+    {:mock, "~> 0.2.0"},
+    {:mix_test_watch, "~> 0.2.6"}]
   end
 end
